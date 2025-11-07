@@ -3,7 +3,7 @@ def apply_inline_styles():
     css = """
     <style>
     body {
-        background-color: #f0f0f0;
+        background-color: #0f0f0;
     }
     .stButton>button {
         color: white;
@@ -75,6 +75,7 @@ if st.button('Calculate Stock'):
         st.write(f"Stage-1: {stock_diff_st1}")
         st.write(f"Stage-2: {stock_diff_st2}")
         st.write(f"Total: {stock_difference}")
+
 
 
 
