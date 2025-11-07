@@ -1,4 +1,19 @@
 import streamlit as st
+def apply_inline_styles():
+    css = """
+    <style>
+    body {
+        background-color: #f0f0f0;
+    }
+    .stButton>button {
+        color: white;
+        background-color: #017bff;
+    }
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+
+apply_inline_styles()
 
 st.title('LDO Stock Calculation App')
 
@@ -61,19 +76,6 @@ if st.button('Calculate Stock'):
         st.write(f"Stage-2: {stock_diff_st2}")
         st.write(f"Total: {stock_difference}")
 
-def apply_inline_styles():
-    css = """
-    <style>
-    body {
-        background-color: #f0f0f0;
-    }
-    .stButton>button {
-        color: white;
-        background-color: #017bff;
-    }
-    </style>
-    """
-    st.markdown(css, unsafe_allow_html=True)
 
-apply_inline_styles()
+
 
