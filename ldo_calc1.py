@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Tank Stock Calculation App')
+st.title('LDO Stock Calculation App')
 
 col1, col2 = st.columns(2)
 
@@ -60,3 +60,19 @@ if st.button('Calculate Stock'):
         st.write(f"Stage-1: {stock_diff_st1}")
         st.write(f"Stage-2: {stock_diff_st2}")
         st.write(f"Total: {stock_difference}")
+
+def apply_inline_styles():
+    css = """
+    <style>
+    body {
+        background-color: #f0f0f0;
+    }
+    .stButton>button {
+        color: white;
+        background-color: #007bff;
+    }
+    </style>
+    """
+    st.markdown(css, unsafe_allow_html=True)
+
+apply_inline_styles()
