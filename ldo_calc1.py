@@ -69,10 +69,11 @@ def apply_inline_styles():
     }
     .stButton>button {
         color: white;
-        background-color: #007bff;
+        background-color: #017bff;
     }
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
 
 apply_inline_styles()
+
